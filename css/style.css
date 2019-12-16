@@ -455,8 +455,8 @@ body.section-show .transition-mask:before{
 	*zoom:1;
 	z-index:10;
 	color:#999;
-	font-family: 'Playfair Display', serif;
-	font-style:italic;
+	/* font-family: 'Playfair Display', serif;
+	font-style:italic; */
 }
 
 .front-person-img{
@@ -566,7 +566,7 @@ body.section-show .transition-mask:before{
 	display:block;
 }
 .front-person-links > ul{
-	height: 100%;
+	height: 85%;
 	font-size:0;
 	z-index:99;
 	position:absolute;
@@ -1503,11 +1503,29 @@ body .symp-btn{
 }
 .portfolio-items > .item > .inner > img{
 	width:100%;
+	height: 300px;
 }
 .portfolio-items > .item > .inner{
 	position:relative;
     margin: 10px;
     border: 1px solid #b5b5b5;
+}
+.text-center{
+	text-align: center;
+}
+.inner-work{
+	position: relative;
+	margin: 10px 29px;
+	width: 45%;
+}
+.inner-work > img{
+	border: 1px solid #ececec;
+}
+@media(max-width:768px){
+	.inner{
+		width:100%;
+		margin: 10px 0;
+	}
 }
 .portfolio-items > .item > .inner > .caption{
 	position:absolute;
@@ -1750,7 +1768,13 @@ body .symp-btn{
 }
 
 .work-content > .block{
-	margin-top:60px;
+	margin-top:20px;
+
+}
+.block-work{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 .work-content > .block h4{
 	font-size:18px;
@@ -1914,7 +1938,8 @@ body .symp-btn{
 		-o-transform:rotate(-45deg) translateY(45px);
 		transform:rotate(-45deg) translateY(100px);
 		position:absolute;
-		bottom:0;
-		left:-40px;
+		top: -40px;
+    right: 40px;
+
 	}
 }
